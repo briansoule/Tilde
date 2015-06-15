@@ -1,4 +1,6 @@
 *
-
 !.gitignore
+
+# Observed Files
 !.gitconfig
+!.vimrc
