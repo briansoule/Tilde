@@ -3,3 +3,5 @@
 :imap JJ <ESC>
 :imap JK <ESC>
 :syntax on
+:set ignorecase
+:set smartcase
