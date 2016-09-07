@@ -1,65 +1,73 @@
 <?xml version="1.0"?>
 <root>
-    <item>
-        <name></name>
-        <appendix>VIM Style Arrow Macros</appendix>
-        <identifier>com.briansoule.vimarrows</identifier>
-<!--        <autogen>-->
-<!--            __KeyToKey__-->
-<!--            KeyCode::J, ModifierFlag::COMMAND_L,-->
-<!--            KeyCode::CURSOR_DOWN-->
-<!--        </autogen>-->
-<!--        <autogen>-->
-<!--            __KeyToKey__-->
-<!--            KeyCode::H, ModifierFlag::COMMAND_L,-->
-<!--            KeyCode::CURSOR_LEFT-->
-<!--        </autogen>-->
-<!--        <autogen>-->
-<!--            __KeyToKey__-->
-<!--            KeyCode::L, ModifierFlag::COMMAND_L,-->
-<!--            KeyCode::CURSOR_RIGHT-->
-<!--        </autogen>-->
-<!--        <autogen>-->
-<!--            __KeyToKey__-->
-<!--            KeyCode::K, ModifierFlag::COMMAND_L,-->
-<!--            KeyCode::CURSOR_UP-->
-<!--        </autogen>-->
+  <devicevendordef>
+    <vendorname>PFU</vendorname>
+    <vendorid>0x0853</vendorid>
+  </devicevendordef>
+  <deviceproductdef>
+    <productname>HHKB_PRO_2</productname>
+    <productid>0x0100</productid>
+  </deviceproductdef>
+<item>
+    <name>Map VIM Cursor Movement to Arrow Keys</name>
+    <appendix>Use Option+H/J/K/L to Input Up/Down/Left/Right</appendix>
+    <identifier>VIMCtrlFJDown</identifier>
+    <autogen>
+        __KeyToKey__
+        KeyCode::J, ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::J, ModifierFlag::OPTION_R,
+        KeyCode::CURSOR_DOWN
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::H, ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::H, ModifierFlag::OPTION_R,
+        KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_UP
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::OPTION_R,
+        KeyCode::CURSOR_UP
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_RIGHT
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::OPTION_R,
+        KeyCode::CURSOR_RIGHT
+    </autogen>
+</item>
 
-        <autogen>
-            __KeyToKey__
-            KeyCode::J, ModifierFlag::OPTION_L,
-            KeyCode::CURSOR_DOWN
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::H, ModifierFlag::OPTION_L,
-            KeyCode::CURSOR_LEFT
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::L, ModifierFlag::OPTION_L,
-            KeyCode::CURSOR_RIGHT
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::K, ModifierFlag::OPTION_L,
-            KeyCode::CURSOR_UP
-        </autogen>
-    </item>
-    
-    <item>
-        <name></name>
-        <appendix>HHKB Delete</appendix>
-        <identifier>com.briansoule.hhkbdelete</identifier>
-        <autogen>
-            __KeyToKey__
-            KeyCode::BACKSLASH,
-            KeyCode::DELETE
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::DELETE,
-            KeyCode::BACKSLASH
-        </autogen>
-    </item>
+<item>
+<name></name>
+<appendix>HHKB Delete</appendix>
+<identifier>com.briansoule.hhkbdelete</identifier>
+<device_not>DeviceVendor::PFU, DeviceProduct::HHKB_PRO_2</device_not>
+<autogen>
+    __KeyToKey__
+    KeyCode::BACKSLASH,
+    KeyCode::DELETE
+</autogen>
+<autogen>
+    __KeyToKey__
+    KeyCode::DELETE,
+    KeyCode::BACKSLASH
+</autogen>
+</item>
 </root>
