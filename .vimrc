@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 :imap jj <ESC>
@@ -22,3 +23,8 @@ call vundle#end()
 :set shiftwidth=2
 :set softtabstop=2
 :set tabstop=2
+
+
+" Open Nerdtree when running "vim"
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
