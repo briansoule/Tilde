@@ -1,1 +1,1 @@
-alias l="ls -FC"
+alias l="ls -FCA"
